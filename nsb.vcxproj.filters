@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BxiK_interp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="counts.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dict_m2o.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntrData.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpi_map.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="node_access.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="node_constr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="node_count.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsb_calc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsb_stat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parallel_dict.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parallel_recorder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recorder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_recorder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfun.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfunctions\dierfc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfunctions\cdgamma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfunctions\dcbrt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfunctions\derf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfunctions\derfc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfunctions\dgamma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\specfunctions\dlgamma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BxiK_interp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="counts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntrData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntrData_except.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entropy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpi_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsb_aux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parallel_recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_dicts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\integration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\multiref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\specfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utility_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utility_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vect_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\specfunctions\mathplus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\specfunctions\specfunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

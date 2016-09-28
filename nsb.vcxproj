@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3AAFE7B-86BD-436E-8843-F023BD6C12D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>nsb-entropy</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>nsb-entropy</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;GSL_DLL;__GNU_LIBRARY__;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\jan\Desktop\gmp-dynamic;C:\Users\jan\Desktop\nsb-entropy-1.14\include;C:\Users\jan\Desktop\gsl-1.8-bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\jan\Desktop\gmp-dynamic;C:\Users\jan\Desktop\gsl-1.8-bin\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gmp.lib;libgsl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;GSL_DLL;__GNU_LIBRARY__;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Users\jan\Desktop\gmp-dynamic;C:\Users\jan\Desktop\nsb-entropy-1.14\include;C:\Users\jan\Desktop\gsl-1.8-bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\jan\Desktop\gmp-dynamic;C:\Users\jan\Desktop\gsl-1.8-bin\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gmp.lib;libgsl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BxiK_interp.cc" />
+    <ClCompile Include="counts.cc" />
+    <ClCompile Include="Dict_m2o.cc" />
+    <ClCompile Include="EntrData.cc" />
+    <ClCompile Include="getopt.c" />
+    <ClCompile Include="include\random.cpp" />
+    <ClCompile Include="include\specfun.cc" />
+    <ClCompile Include="include\specfunctions\cdgamma.c" />
+    <ClCompile Include="include\specfunctions\dcbrt.c" />
+    <ClCompile Include="include\specfunctions\derf.c" />
+    <ClCompile Include="include\specfunctions\derfc.c" />
+    <ClCompile Include="include\specfunctions\dgamma.c" />
+    <ClCompile Include="include\specfunctions\dierfc.cc" />
+    <ClCompile Include="include\specfunctions\dlgamma.c" />
+    <ClCompile Include="mpi_map.cc" />
+    <ClCompile Include="node_access.cc" />
+    <ClCompile Include="node_constr.cc" />
+    <ClCompile Include="node_count.cc" />
+    <ClCompile Include="nsb.cc" />
+    <ClCompile Include="nsb_calc.cc" />
+    <ClCompile Include="nsb_stat.cc" />
+    <ClCompile Include="parallel_dict.cc" />
+    <ClCompile Include="parallel_recorder.cc" />
+    <ClCompile Include="parsers.cc" />
+    <ClCompile Include="recorder.cc" />
+    <ClCompile Include="simple_recorder.cc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\jan\Desktop\gsl-1.8-bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\jan\Desktop\gsl-1.8-bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BxiK_interp.h" />
+    <ClInclude Include="counts.h" />
+    <ClInclude Include="EntrData.h" />
+    <ClInclude Include="EntrData_except.h" />
+    <ClInclude Include="Entropy.h" />
+    <ClInclude Include="getopt.h" />
+    <ClInclude Include="include\compiler.h" />
+    <ClInclude Include="include\integration.h" />
+    <ClInclude Include="include\interp.h" />
+    <ClInclude Include="include\multiref.h" />
+    <ClInclude Include="include\random.h" />
+    <ClInclude Include="include\specfun.h" />
+    <ClInclude Include="include\specfunctions\mathplus.h" />
+    <ClInclude Include="include\specfunctions\specfunctions.h" />
+    <ClInclude Include="include\utility.h" />
+    <ClInclude Include="include\utility_2.h" />
+    <ClInclude Include="include\utility_3.h" />
+    <ClInclude Include="include\vect_math.h" />
+    <ClInclude Include="mpi.h" />
+    <ClInclude Include="mpi_map.h" />
+    <ClInclude Include="node.h" />
+    <ClInclude Include="nsb.h" />
+    <ClInclude Include="nsb_aux.h" />
+    <ClInclude Include="parallel_recorder.h" />
+    <ClInclude Include="parsers.h" />
+    <ClInclude Include="recorder.h" />
+    <ClInclude Include="simple_dicts.h" />
+    <ClInclude Include="simple_recorder.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
